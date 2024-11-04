@@ -1,0 +1,12 @@
+include "Types.fbs";
+namespace sbx.schema;
+
+table Input {
+  cursor:Vec2;
+  forward:float;
+  backward:float;
+  left:float;
+  right:float;
+}
+
+root_type Input;

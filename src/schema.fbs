@@ -1,0 +1,19 @@
+namespace sbx:schema;
+include "Types.fbs";
+
+table State {
+  camera:Camera;
+  player:Player;
+}
+
+table Camera {
+  pos:Vec3;
+  orientation:Quat;
+}
+
+table Player {
+  pos:Vec3;
+  orientation:Quat;
+}
+
+root_type State;
